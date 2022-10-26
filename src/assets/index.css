@@ -15,9 +15,16 @@ body {
   background-color: #efefef;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: "Work Sans";
+}
+
 h1 {
   font-size: 5.2rem;
-  font-family: "Work Sans";
+}
+
+h2 {
+  font-size: 2.6rem;
 }
 
 img {
@@ -38,6 +45,22 @@ img {
 
 .btn:hover {
   background-color: grey;
+}
+
+.btn--fw {
+  width: 100%;
+}
+
+.btn--light {
+  background-color: lightgray;
+  color: black;
+  font-size: 2.8rem;
+  font-weight: 100;
+  padding: 1rem;
+}
+
+.btn--light:hover {
+  background-color: whitesmoke;
 }
 
 .page {
@@ -97,6 +120,11 @@ img {
   font-weight: 500;
 }
 
+.login_error {
+  color: red;
+  margin: 1em 0;
+}
+
 /* end login */
 
 .tasks-layout {
@@ -147,4 +175,58 @@ img {
   bottom: 1rem;
   left: 0;
   text-align: center;
+}
+
+.tasks {
+  width: 100%;
+  padding: 1.5em;
+}
+
+.tasks_header_title {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.taskslist {
+  margin-top: 2em;
+  list-style: none;
+  padding: 0;
+}
+
+.taskitem {
+  margin-bottom: 0.5em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskitem_description-container {
+  display: flex;
+}
+
+.taskitem_circle {
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.taskitem_circle.solid {
+  background-color: black;
+}
+
+.taskitem_circle.hollow {
+  background-color: rgba(0,0,0,0);
+}
+
+.taskitem_category {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  background-color: lightgray;
+  padding: 0.2em 1em;
+  border-radius: 1em;
 }

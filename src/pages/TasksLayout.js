@@ -5,7 +5,7 @@ const TasksLayout = () => {
   return (
     <div className='tasks-layout'>
       <Sidebar />
-      <div className='tasks-container'>
+      <div className='tasks'>
         <Outlet />
       </div>
     </div>

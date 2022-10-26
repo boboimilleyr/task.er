@@ -39,10 +39,10 @@ const Login = ({ setUser }) => {
           <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} placeholder="Username" required/>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required/>
           <button type="submit" className='btn'>Login</button>
+          {
+            inputIsNotValid && <p className='login_error'>Username or password is incorrect, please enter a valid username or password.</p>
+          }
         </form>
-        {
-          inputIsNotValid && <p>Username/password is incorrect, please enter a valid username/password.</p>
-        }
       </div>
     </div>
   )

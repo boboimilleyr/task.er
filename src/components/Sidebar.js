@@ -13,7 +13,7 @@ const Sidebar = () => {
           All
         </NavLink>
         <NavLink
-          to={`/tasks/house` /* replace house with dynamic category*/}
+          to={`/tasks/home` /* replace house with dynamic category*/}
         >
           House
         </NavLink>
