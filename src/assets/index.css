@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #efefef;
+}
+
+h1 {
+  font-size: 5.2rem;
+  font-family: "Work Sans";
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 1em 2.5em;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 0.125s ease;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+.page {
+  height: 100vh;
+}
+
+/* Home page ui */
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home p {
+  width: 60%;
+  max-width: 50em;
+  margin: 1em auto 2em auto;
+}
+
+/* end home*/
+
+/* Login page ui */
+
+.login {
+  height: 100%;
+  width: calc(100% - 5em);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_welcome {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.login-form input {
+  padding: 0.8em;
+  border: none;
+  border-radius: .5rem;
+  background-color: rgba(0,0,0,0.1);
+  color: black;
+  font-weight: 500;
+}
+
+/* end login */
+
+.tasks-layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 7rem;
+  height: 100%;
+  background-color: #CFCFCF;
+  position: relative;
+}
+
+.tasks-container {
+  width: 100%;
+}
+
+.sidebar_profile {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+.sidebar_profile_img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.sidebar_nav {
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar_exit {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  text-align: center;
+}
