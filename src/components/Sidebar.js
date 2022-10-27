@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({categories}) => {
+  
   return (
     <div className="sidebar">
       <div className="sidebar_profile">
@@ -12,16 +13,18 @@ const Sidebar = () => {
         >
           All
         </NavLink>
-        <NavLink
-          to={`/tasks/home` /* replace house with dynamic category*/}
-        >
-          House
-        </NavLink>
-        <NavLink
-          to='/tasks/work'
-        >
-          Work
-        </NavLink>
+        {
+          categories.map((category, i) => {
+            return (
+              <NavLink
+                key={i}
+                to={`/tasks/${category}` /* replace house with dynamic category*/}
+              >
+                {category}
+              </NavLink>
+            );
+          })
+        }
       </nav>
       <div className="sidebar_exit">
         <NavLink to="/">exit</NavLink>
